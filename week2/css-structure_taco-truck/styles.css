@@ -1,0 +1,69 @@
+/* -------------------------------------------------------- */
+/* You will need to add more imports eventually.
+/* -------------------------------------------------------- */
+
+@import "./theme.css";
+
+/* ------------------------------------------------------------------------------ */
+/* You don't need to edit the code for the * universal selector and the body.
+/* ------------------------------------------------------------------------------ */
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0;
+  padding: 20px;
+  height: 100vh;
+  width: 100vw;
+  font-family: system-ui;
+  background: var(--body-bg);
+  color: white;
+}
+.header {
+  background-color: rgb(168, 168, 7);
+  color: rgb(8, 8, 148);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.main {
+  margin-top: 60px;
+  position: relative;
+}
+.main__title {
+  color: inherit;
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px;
+}
+.main__card {
+max-width: 500px;
+height: 250px;
+}
+.main__card__title {
+  color: lightblue;
+  margin-bottom: 40px;
+}
+.main__maincard {
+  display: flex;
+  flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+margin-top: 50px;
+}
+.main__list {
+  list-style: none;
+  background-color: rgb(11, 79, 11);
+  border: 2px solid rgb(37, 180, 9);
+  border-radius: 15px;
+padding: 10px;
+margin: 20px;
+}
