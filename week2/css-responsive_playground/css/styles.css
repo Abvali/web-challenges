@@ -4,7 +4,6 @@
 play around with the concepts you've learned. Read the instructions 
 carefully. */
 
-
 :root {
   /* Color Variables */
 
@@ -19,8 +18,6 @@ carefully. */
 *::after {
   box-sizing: border-box;
 }
-
-
 
 body {
   margin: 0;
@@ -64,7 +61,6 @@ h1 {
 
 .box--one {
   background-color: lightblue;
-  position: relative;
   width: 100px;
   height: 100px;
 }
@@ -81,21 +77,21 @@ h1 {
   width: 50px;
   height: 250px;
 }
+
 @media (orientation: landscape) {
   .box--three {
     height: 50px;
     width: 250px;
   }
 }
+
 .box--four {
   background-color: lightgray;
 
   width: 100px;
   height: 100px;
 }
-@media (color) {
-  
-}
+
 .box--five {
   width: 100%;
 }
@@ -104,17 +100,28 @@ h1 {
   width: 100%;
 }
 
-@media (min-width: 599px) {
+@media (min-width: 600px) {
   .box--two {
     width: 200px;
   }
-  .box--five img {
-    content: url(/img/cat_medium.jpg);
+  .box--five {
+    content: url(../img/cat_medium.jpg);
   }
 }
-
-@media (min-width: 1199px) {
+@media (min-width: 1200px) {
   .box--two {
     width: 400px;
+  }
+  .box--four {
+    background-color: #252629;
+  }
+  .box--five {
+    content: url(../img/cat_large.jpg);
+  }
+}
+@media (orientation: landscape) {
+  .box--three {
+    width: 250px;
+    height: 50px;
   }
 }
